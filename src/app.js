@@ -40,5 +40,16 @@ app.post('/add', (req, res) => {
   });
 });
 
+app.post('/delete/:id', (req, res) => {
+  const id = req.params.id;
+  db.query('DELETE FROM users WHERE id = ?', [id], (err) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).send('Delete failed');
+    }
+    res.redirect('/');
+  });
+});
+
 // Start
 app.listen(3000, () => console.log('App running on http://localhost:3000'));
