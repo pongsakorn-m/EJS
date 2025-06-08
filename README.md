@@ -8,7 +8,6 @@ A simple web application built with **Node.js**, **Express**, **EJS**, and **MyS
 
 - 🧑 List all users
 - ➕ Add new users
-- 🔁 Edit existing users
 - ❌ Delete users
 - 🎨 EJS templating with clean UI
 - 🐳 Easy setup using Docker
